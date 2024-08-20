@@ -1,0 +1,14 @@
+/* Add this to your global CSS file or a relevant CSS module */
+.slider-container {
+    overflow: hidden;
+  }
+  
+  .slider-content {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slider-slide {
+    flex: 0 0 100%;
+  }
+  
