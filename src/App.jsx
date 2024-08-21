@@ -51,6 +51,10 @@ import Tools from "./Components/CTA/Tools";
 import Newsletter from "./Components/Newsletter/Newsletter";
 import LearnWebby from "./Components/Webby/LearnWebby";
 import Website from "./Components/Web/Website";
+import Products from "./Components/Products/Products";
+import Features from "./Components/Feature/Feature";
+import MarketPlace from "./Components/Marketplace/MarketPlace";
+import Company from "./Components/Company/Company";
 
 function App() {
   return (
@@ -80,6 +84,10 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/learnwebby" element={<LearnWebby />} />
         <Route path="/visitwebsite" element={<Website />} />
+        <Route path="/product" element={<Products />} />
+        <Route path="/feature" element={<Features />} />
+        <Route path="/marketPlace" element={<MarketPlace />} />
+        <Route path="/company" element={<Company />} />
       </Routes>
       <Footer /> {/* Footer should be visible on all routes */}
     </Router>

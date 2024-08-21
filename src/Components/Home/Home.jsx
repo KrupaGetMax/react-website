@@ -6,10 +6,10 @@ import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: "Product", href: "#" },
-  { name: "Features", href: "#" },
-  { name: "Marketplace", href: "#" },
-  { name: "Company", href: "#" },
+  { name: "Product", href: "/product" },
+  { name: "Features", href: "/feature" },
+  { name: "Marketplace", href: "/marketPlace" },
+  { name: "Company", href: "/company" },
 ];
 
 const Home = () => {
@@ -45,8 +45,8 @@ const Home = () => {
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
               <Link
+                to={item.href}
                 key={item.name}
-                href={item.href}
                 className="text-sm font-semibold leading-6 text-gray-900"
               >
                 {item.name}
