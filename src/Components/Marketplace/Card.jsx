@@ -44,6 +44,7 @@ const posts = [
   },
 ];
 
+
 const Card = () => {
   return (
     <section className="py-10">
